@@ -45,7 +45,20 @@
 
 .arrowDown img {
     cursor: pointer;
-    width: clamp(50px, 15vw, 150px);
+    width: clamp(50px, 15vw, 120px);
+}
+
+.projects {
+    margin-top: 15rem;
+}
+
+.projectsTitle {
+    display: flex;
+    margin: auto;
+    font-size: clamp(20px, 5vw, 40px);
+    font-weight: bold;
+    width: fit-content;
+    border-bottom: 5px solid #000;
 }
 
 @media (max-width: 900px) {
