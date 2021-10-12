@@ -1,0 +1,48 @@
+.headerRoot {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2rem 0;
+}
+
+.headerButtons {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+}
+
+.headerButton {
+    background: #000;
+    color: #FFF;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.headerButton:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.hamburgerMenu {
+    display: none;
+}
+
+.hamburgerMenu:hover {
+    cursor: pointer;
+}
+
+.hamburgerMenu img {
+    width: clamp(30px, 5vw, 40px);
+}
+
+@media (max-width: 900px) {
+    .headerButtons {
+        display: none;
+    }
+    .hamburgerMenu {
+        display: block;
+    }
+}

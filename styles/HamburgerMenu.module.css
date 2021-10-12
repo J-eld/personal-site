@@ -1,0 +1,96 @@
+.hamburgerMenuRoot {
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.menuBox {
+    position: fixed;
+    background: black;
+    height: 100%;
+    width: 40%;
+    right: 0;
+    animation: menuOpen 0.3s;
+}
+
+.menuClose {
+    animation: menuClose 0.3s;
+    animation-fill-mode: forwards;
+}
+
+.closeIconDiv {
+    margin: 1rem;
+}
+
+.closeIconDiv:hover {
+    cursor: pointer;
+}
+
+.headerButton {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.headerButton:hover {
+    background: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+
+.headerButton:active {
+    background: #FFF;
+    color: #000;
+    cursor: pointer;
+}
+
+@keyframes menuOpen {
+    from {
+        width: 0;
+    }
+    to {
+        width: 40%;
+    }
+}
+
+@keyframes menuClose {
+    from {
+        width: 40%;
+    }
+    to {
+        width: 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    .menuBox {
+        width: 100%
+    }
+
+    @keyframes menuOpen {
+        from {
+            width: 0;
+        }
+        to {
+            width: 100%;
+        }
+    }
+
+    @keyframes menuClose {
+        from {
+            width: 100%;
+        }
+        to {
+            width: 0;
+        }
+    }
+}

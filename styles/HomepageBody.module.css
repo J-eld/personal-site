@@ -1,0 +1,74 @@
+.homepageBodyRoot {
+    margin-top: 10rem;
+
+}
+
+.greetingTitle {
+    font-size: clamp(35px, 10vw, 100px);
+    font-weight: bold;
+    max-width: 90%;
+}
+
+.Hi {
+    opacity: 0;
+    animation-name: fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.greetingName {
+    opacity: 0;
+    animation-name: fade;
+    animation-delay: 1s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.greetingOccupation {
+    opacity: 0;
+    animation-name: fade;
+    animation-delay: 2s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.arrowDown {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+    opacity: 0;
+    animation-name: fade;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.arrowDown img {
+    cursor: pointer;
+    width: clamp(50px, 15vw, 150px);
+}
+
+@media (max-width: 900px) {
+    .homepageBodyRoot {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .homepageBodyRoot {
+        margin-top: 1rem;
+    }
+    .greetingTitle {
+        max-width: 100%;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
