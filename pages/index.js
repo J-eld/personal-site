@@ -8,10 +8,6 @@ import Footer from 'components/Footer'
 export default function Home() {
   return (
     <div className="container">
-      <Head>
-        <title>Jad Eldik | Full Stack Developer</title>
-        <link rel="icon" type="image/png" href="JLogo.png"/>
-      </Head>
       <Header />
       <HomepageBody />
       <Footer />
