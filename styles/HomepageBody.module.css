@@ -4,7 +4,7 @@
 }
 
 .greetingTitle {
-    font-size: clamp(35px, 10vw, 100px);
+    font-size: 100px;
     font-weight: bold;
     max-width: 90%;
 }
@@ -61,6 +61,13 @@
     border-bottom: 5px solid #000;
 }
 
+@media (max-width: 1400px) {
+    .greetingTitle {
+        font-size: clamp(35px, 10vw, 80px);
+    }
+}
+
+
 @media (max-width: 900px) {
     .homepageBodyRoot {
         margin-top: 5rem;
@@ -73,6 +80,12 @@
     }
     .greetingTitle {
         max-width: 100%;
+    }
+    .arrowDown {
+        margin-top: 3rem;
+    }
+    .projects {
+        margin-top: 30rem;
     }
 }
 

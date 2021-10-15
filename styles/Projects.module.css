@@ -56,6 +56,9 @@
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
+    .projectRoot {
+        margin-top: 3rem;
+    }
 }
 
 @media (max-width: 450px) {
