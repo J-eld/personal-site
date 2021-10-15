@@ -56,7 +56,7 @@ export default function ProjectImageCarousel({ folder, numberOfPhotos }) {
         <div className={styles.carouselRoot}>
             <Slider {...settings} className={styles.carousel}>
                {photos.map((photo, index) => (
-                   <Image key={index} src={photo} width={1920} height={1080} />
+                   <Image priority key={index} src={photo} width={1920} height={1080} />
                ))}
             </Slider>
         </div>
