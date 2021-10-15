@@ -1,18 +1,3 @@
-.carouselRoot {
-    /* overflow: hidden; */
-}
-
-.photoContainer {
-    /* display: flex; */
-}
-
-.photoContainer img {
-}
-
-.carousel {
-    /* background: #000; */
-    /* width: 80%; */
-}
 
 .nextArrow {
     right: 5%;
