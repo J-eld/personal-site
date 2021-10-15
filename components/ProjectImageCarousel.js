@@ -1,12 +1,25 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect, useRef} from 'react'
 import Image from 'next/image'
 import styles from 'styles/ProjectImageCarousel.module.css'
 import clsx from 'clsx'
 import Slider from 'react-slick'
+import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 export default function ProjectImageCarousel({ folder, numberOfPhotos }) {
     const [photos, setPhotos] = useState([])
     const [activePhoto, setActivePhoto] = useState(0)
+
+    const slider = useRef(null);
+
+    const lockVerticalScrollWhenHorizontalSwiping = (direction) => {
+        const isHorizontal = direction !== 'vertical';
+        if (isHorizontal) {
+        // Will be released when the gesture finish even if the slide has no changed.
+        disableBodyScroll(slider.current);
+        }
+    };  
+
+    const releaseBodyScroll = () => enableBodyScroll(slider.current);
 
     const NextArrow = (props) => {
         const { className, style, onClick } = props;
@@ -53,8 +66,8 @@ export default function ProjectImageCarousel({ folder, numberOfPhotos }) {
     }
 
     return (
-        <div className={styles.carouselRoot}>
-            <Slider {...settings} className={styles.carousel}>
+        <div className={styles.carouselRoot} onTouchEnd={releaseBodyScroll}>
+            <Slider ref={slider} swipeEvent={lockVerticalScrollWhenHorizontalSwiping} enableVerticalScroll {...settings} className={styles.carousel}>
                {photos.map((photo, index) => (
                    <Image priority key={index} src={photo} width={1920} height={1080} />
                ))}
