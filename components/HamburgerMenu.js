@@ -3,6 +3,7 @@ import styles from 'styles/HamburgerMenu.module.css'
 import RightChevron from 'assets/chevronRight.svg'
 import Image from 'next/image'
 import clsx from 'clsx'
+import Link from 'next/link'
 
 export default function HamburgerMenu({ setMenuOpen }) {
     const [menuClose, setMenuClose] = useState(false)
@@ -24,9 +25,13 @@ export default function HamburgerMenu({ setMenuOpen }) {
                     <Image onClick={handleClose} src={RightChevron} />
                 </div>
                 <div className={styles.headerButtonsInMenu}>
-                    <div className={styles.headerButton}>Home</div>
+                    <Link href="/">
+                        <div className={styles.headerButton}>Home</div>
+                    </Link>
                     <div className={styles.headerButton}>About Me</div>
-                    <div className={styles.headerButton}>Contact</div>
+                    <Link href="/contact">
+                        <div className={styles.headerButton}>Contact</div>
+                    </Link>
                 </div>
             </div>
         </div>
