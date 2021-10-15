@@ -9,6 +9,7 @@ import NodeJSLogo from 'assets/NodeJSLogo.svg';
 import DockerLogo from 'assets/DockerLogo.svg';
 import AWSLogo from 'assets/AWSLogo.svg';
 import Image from 'next/image'
+import ProjectImageCarousel from './ProjectImageCarousel'
 
 
 export default function Projects() {
@@ -18,7 +19,7 @@ export default function Projects() {
                 <div className={styles.projectCardTitle}>
                     Attendance App
                 </div>
-                <div className={styles.photos}><Image className={styles.photo} src="/attendance-app-photos/photo1.png" width={1920} height={1080} /></div>
+                <div className={styles.photos}><ProjectImageCarousel folder="attendance-app-photos" numberOfPhotos={6} /></div>
                 <div className={styles.projectCardDescription}>
                     This is an internal project done for Mission Ready that tracks candidate attendance.
                     As the company grew, a more robust and scalable way to track attendance became necessary.
@@ -56,7 +57,7 @@ export default function Projects() {
                 <div className={styles.projectCardTitle}>
                     Technius
                 </div>
-                <div className={styles.photos}><Image className={styles.photo} src="/technius-photos/photo1.png" width={1920} height={1080} /></div>
+                <div className={styles.photos}><ProjectImageCarousel folder="technius-photos" numberOfPhotos={5} /></div>
                 <div className={styles.projectCardDescription}>
                     A project done for Mission Ready. This project seeks to provide an entryway for young children
                     into the tech industry. A user may sign on to the Technius platform to gain access to a playable 
@@ -100,7 +101,7 @@ export default function Projects() {
                 <div className={styles.projectCardTitle}>
                     Where-to-Watch
                 </div>
-                <div className={styles.photos}><Image className={styles.photo} src="/where-to-watch-photos/photo1.png" width={1920} height={1080} /></div>
+                <div className={styles.photos}><ProjectImageCarousel folder="where-to-watch-photos" numberOfPhotos={4} /></div>
                 <div className={styles.projectCardDescription}>
                     A personal project that allows a user to search any TV show or movie, and provides information about the show/movie
                     as well as where it is available to stream on demand in their country. If the show/movie is not available in their
@@ -135,7 +136,7 @@ export default function Projects() {
                 <div className={styles.projectCardTitle}>
                     Weather App
                 </div>
-                <div className={styles.photos}><Image className={styles.photo} src="/weather-app-photos/photo1.png" width={1920} height={1080} /></div>
+                <div className={styles.photos}><ProjectImageCarousel folder="weather-app-photos" numberOfPhotos={2} /></div>
                 <div className={styles.projectCardDescription}>
                     A simple weather app that shows the weather in the users region, and allows the user to search
                     through other regions as well as toggle the current temperature between metric and imperial units.<br/>

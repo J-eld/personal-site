@@ -8,7 +8,7 @@
 
 .projectCard {
     width: 100%;
-    max-width: 600px;
+    max-width: 700px;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     margin-bottom: 5rem;
     padding: 1rem;
@@ -19,8 +19,12 @@
     font-weight: bold;
 }
 
+.photos {
+    padding: 1rem 0;
+}
+
 .projectCardDescription {
-    padding: 1rem;
+    padding: 2rem 1rem 1rem 1rem;
     font-size: clamp(15px, 3vw, 20px);
 }
 
@@ -38,19 +42,6 @@
     display: flex;
     align-items: center;
     gap: 5px;
-}
-
-.photos {
-    width: 100%;
-    color: white;
-    padding: 1rem 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.photo {
-    object-fit: contain;
 }
 
 .technologies {
