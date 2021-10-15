@@ -52,9 +52,6 @@
     width: clamp(50px, 15vw, 120px);
 }
 
-.projects {
-}
-
 .projectsTitle {
     display: flex;
     margin: auto;
@@ -86,9 +83,6 @@
     }
     .arrowDown {
         margin-top: 3rem;
-    }
-    .projects {
-        /* margin-top: 20rem; */
     }
 }
 
