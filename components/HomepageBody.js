@@ -13,13 +13,15 @@ export default function HomepageBody() {
 
     return (
         <div className={styles.homepageBodyRoot}>
-            <div className={styles.greetingTitle}>
-                <div className={styles.Hi}>Hi,</div>
-                <div className={styles.greetingName}>I'm Jad Eldik</div>
-                <div className={styles.greetingOccupation}>Full Stack Web Developer 💻</div>
-            </div>
-            <div className={styles.arrowDown}>
-                    <Image onClick={scrollToProjects} height={150} width={150} src={ArrowDown} />
+            <div className={styles.homepageBodyTop}>
+                <div className={styles.greetingTitle}>
+                    <div className={styles.Hi}>Hi,</div>
+                    <div className={styles.greetingName}>I'm Jad Eldik</div>
+                    <div className={styles.greetingOccupation}>Full Stack Web Developer 💻</div>
+                </div>
+                <div className={styles.arrowDown}>
+                        <Image onClick={scrollToProjects} height={150} width={150} src={ArrowDown} />
+                </div>
             </div>
             <div className={styles.projects}>
                 <div ref={projectsRef} className={styles.projectsTitle}>
