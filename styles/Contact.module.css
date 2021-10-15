@@ -41,6 +41,7 @@
 }
 
 .submit {
+    -webkit-appearance: none;
     margin-top: 2rem;
     background: #000;
     color: #FFF;
