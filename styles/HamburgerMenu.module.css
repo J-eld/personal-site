@@ -25,7 +25,7 @@
 }
 
 .closeIconDiv {
-    margin: 1rem;
+    margin: 1.5rem;
     width: fit-content;
 }
 
@@ -45,6 +45,7 @@
     background: #FFF;
     color: #000;
     cursor: pointer;
+    animation: buttonHover 0.5s;
 }
 
 .headerButton:active {
@@ -71,6 +72,16 @@
     }
 }
 
+@keyframes buttonHover {
+    from {
+        background: #000;
+        color: #FFF;
+    }
+    to {
+        background: #FFF;
+        color: #000;
+    }
+}
 
 @media (max-width: 500px) {
     .menuBox {
