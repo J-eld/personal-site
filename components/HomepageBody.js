@@ -20,7 +20,7 @@ export default function HomepageBody() {
                     <div className={styles.greetingOccupation}>Full Stack Web Developer 💻</div>
                 </div>
                 <div className={styles.arrowDown}>
-                        <Image onClick={scrollToProjects} height={150} width={150} src={ArrowDown} />
+                        <Image priority onClick={scrollToProjects} height={150} width={150} src={ArrowDown} />
                 </div>
             </div>
             <div className={styles.projects}>
