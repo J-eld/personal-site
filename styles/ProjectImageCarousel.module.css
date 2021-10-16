@@ -1,3 +1,6 @@
+.carouselRoot {
+    cursor: pointer;
+}
 
 .nextArrow {
     right: 5%;

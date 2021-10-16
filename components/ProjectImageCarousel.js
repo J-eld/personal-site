@@ -12,14 +12,17 @@ export default function ProjectImageCarousel({ folder, numberOfPhotos }) {
     const slider = useRef(null);
 
     const lockVerticalScrollWhenHorizontalSwiping = (direction) => {
+        // console.log(direction)
         const isHorizontal = direction !== 'vertical';
-        if (isHorizontal) {
+        if (isHorizontal && window.matchMedia("(pointer: coarse)").matches) {
         // Will be released when the gesture finish even if the slide has no changed.
-        disableBodyScroll(slider.current);
+            disableBodyScroll(slider.current);
         }
     };  
 
-    const releaseBodyScroll = () => enableBodyScroll(slider.current);
+    const releaseBodyScroll = (e) => {
+        enableBodyScroll(slider.current)
+    };
 
     const NextArrow = (props) => {
         const { className, style, onClick } = props;
@@ -66,8 +69,8 @@ export default function ProjectImageCarousel({ folder, numberOfPhotos }) {
     }
 
     return (
-        <div className={styles.carouselRoot} onTouchEnd={releaseBodyScroll}>
-            <Slider ref={slider} swipeEvent={lockVerticalScrollWhenHorizontalSwiping} enableVerticalScroll {...settings} className={styles.carousel}>
+        <div onTouchEnd={releaseBodyScroll} className={styles.carouselRoot} >
+            <Slider ref={slider} swipeEvent={lockVerticalScrollWhenHorizontalSwiping} {...settings} className={styles.carousel}>
                {photos.map((photo, index) => (
                    <Image priority key={index} src={photo} width={1920} height={1080} />
                ))}
