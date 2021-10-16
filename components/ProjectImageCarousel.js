@@ -7,12 +7,10 @@ import { disableBodyScroll, enableBodyScroll } from 'body-scroll-lock'
 
 export default function ProjectImageCarousel({ folder, numberOfPhotos }) {
     const [photos, setPhotos] = useState([])
-    const [activePhoto, setActivePhoto] = useState(0)
 
     const slider = useRef(null);
 
     const lockVerticalScrollWhenHorizontalSwiping = (direction) => {
-        // console.log(direction)
         const isHorizontal = direction !== 'vertical';
         if (isHorizontal && window.matchMedia("(pointer: coarse)").matches) {
         // Will be released when the gesture finish even if the slide has no changed.

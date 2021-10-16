@@ -28,7 +28,9 @@ export default function HamburgerMenu({ setMenuOpen }) {
                     <Link href="/">
                         <div className={styles.headerButton}>Home</div>
                     </Link>
-                    <div className={styles.headerButton}>About Me</div>
+                    <Link href="/about">
+                        <div className={styles.headerButton}>About me</div>
+                    </Link>
                     <Link href="/contact">
                         <div className={styles.headerButton}>Contact</div>
                     </Link>

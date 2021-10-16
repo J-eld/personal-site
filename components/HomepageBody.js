@@ -24,7 +24,7 @@ export default function HomepageBody() {
                 </div>
             </div>
             <div className={styles.projects}>
-                <div ref={projectsRef} className={styles.projectsTitle}>
+                <div id="projects" ref={projectsRef} className={styles.projectsTitle}>
                     Projects
                 </div>
                 <Projects />
