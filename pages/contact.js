@@ -50,11 +50,11 @@ export default function Contact() {
                 </div>
                 <div className={styles.inputDiv}>
                     <label>Name</label>
-                    <input required value={name} onChange={(e) => setName(e.target.value)} type="text" className={clsx(styles.input)} />
+                    <input required value={name} onChange={(e) => setName(e.target.value)} type="name" className={clsx(styles.input)} />
                 </div>
                 <div className={styles.inputDiv}>
                     <label>Email</label>
-                    <input required value={email} onChange={(e) => setEmail(e.target.value)} type="text" className={clsx(styles.input)} />
+                    <input required value={email} onChange={(e) => setEmail(e.target.value)} type="email" className={clsx(styles.input)} />
                 </div>
                 <div className={styles.inputDiv}>
                     <label>Message</label>
