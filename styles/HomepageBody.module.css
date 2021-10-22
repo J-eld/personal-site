@@ -42,7 +42,7 @@
     margin-top: 5rem;
     opacity: 0;
     animation-name: fade;
-    animation-delay: 4s;
+    animation-delay: 3s;
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
