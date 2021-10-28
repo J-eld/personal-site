@@ -8,6 +8,9 @@ import MYSQLLogo from 'assets/MYSQLLogo.svg';
 import NodeJSLogo from 'assets/NodeJSLogo.svg';
 import DockerLogo from 'assets/DockerLogo.svg';
 import AWSLogo from 'assets/AWSLogo.svg';
+import TypescriptLogo from 'assets/TypescriptLogo.svg';
+import PostgresLogo from 'assets/PostgresLogo.svg';
+import TailwindLogo from 'assets/TailwindLogo.svg';
 import Image from 'next/image'
 import ProjectImageCarousel from './ProjectImageCarousel'
 
@@ -115,6 +118,82 @@ export default function Projects() {
                     </div>
                     <div className={styles.technologies}>
                         <div className={styles.technology}>
+                            <Image src={HTMLLogo} width={30} height={30} /> HTML
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={CSSLogo} width={30} height={30} /> CSS
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={ReactLogo} width={30} height={30} /> React
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={NextJSLogo} width={207/4} height={124/4} /> NextJS
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={NodeJSLogo} width={590/12} height={361/12} /> NodeJS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.projectCard}>
+                <div className={styles.projectCardTitle}>
+                    Url Shortener App
+                </div>
+                <div className={styles.photos}><ProjectImageCarousel folder="url-shortener-app-photos" numberOfPhotos={1} /></div>
+                <div className={styles.projectCardDescription}>
+                    A simple URL shortener app, pass in a long url to recieve a shortened url thats easier to share, that will redirect to the full site.
+                    The purpose of this project was to gain some practice and experience using new technologies like TypeScript Postgres and Tailwind CSS<br/>
+                    Check out the source code <a style={{color: 'blue'}} href="https://github.com/J-eld/url-minifier" target="_blank"><u>here.</u></a> <br/>
+                    Check out a demo by clicking <a style={{color: 'blue'}} href="https://url-minifier.vercel.app/" target="_blank"><u>here.</u></a>
+                </div>
+                <div className={styles.projectCardTechnologiesUsed}>
+                    <div className={styles.technologiesUsedTitle}>
+                        Technologies used: 
+                    </div>
+                    <div className={styles.technologies}>
+                    <div className={styles.technology}>
+                            <Image src={HTMLLogo} width={30} height={30} /> HTML
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={CSSLogo} width={30} height={30} /> CSS
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={TypescriptLogo} width={30} height={30} /> TypeScript
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={ReactLogo} width={30} height={30} /> React
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={NextJSLogo} width={207/4} height={124/4} /> NextJS
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={NodeJSLogo} width={590/12} height={361/12} /> NodeJS
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={PostgresLogo} width={590/12} height={361/12} /> PostgreSQL
+                        </div>
+                        <div className={styles.technology}>
+                            <Image src={TailwindLogo} width={590/12} height={361/12} /> Tailwind CSS
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.projectCard}>
+                <div className={styles.projectCardTitle}>
+                    Portfolio Website
+                </div>
+                <div className={styles.photos}><ProjectImageCarousel folder="portfolio-site-photos" numberOfPhotos={1} /></div>
+                <div className={styles.projectCardDescription}>
+                    A website that showcases some of the projects that I've been working on. My goal is to keep this website as up to date as possible,
+                    but feel free to check out my github from the link in the footer.<br/>
+                    Check out the source code <a style={{color: 'blue'}} href="https://github.com/J-eld/personal-site" target="_blank"><u>here.</u></a> <br/>
+                </div>
+                <div className={styles.projectCardTechnologiesUsed}>
+                    <div className={styles.technologiesUsedTitle}>
+                        Technologies used: 
+                    </div>
+                    <div className={styles.technologies}>
+                    <div className={styles.technology}>
                             <Image src={HTMLLogo} width={30} height={30} /> HTML
                         </div>
                         <div className={styles.technology}>
