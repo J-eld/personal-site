@@ -8,7 +8,7 @@ import MYSQLLogo from 'assets/MYSQLLogo.svg';
 import NodeJSLogo from 'assets/NodeJSLogo.svg';
 import DockerLogo from 'assets/DockerLogo.svg';
 import AWSLogo from 'assets/AWSLogo.svg';
-import TypescriptLogo from 'assets/TypescriptLogo.svg';
+import TypescriptLogo from 'assets/TypescriptLogo.svg'; 
 import PostgresLogo from 'assets/PostgresLogo.svg';
 import TailwindLogo from 'assets/TailwindLogo.svg';
 import Image from 'next/image'
