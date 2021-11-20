@@ -124,6 +124,9 @@ export default function Projects() {
                             <Image src={CSSLogo} width={30} height={30} /> CSS
                         </div>
                         <div className={styles.technology}>
+                            <Image src={TypescriptLogo} width={30} height={30} /> TypeScript
+                        </div>
+                        <div className={styles.technology}>
                             <Image src={ReactLogo} width={30} height={30} /> React
                         </div>
                         <div className={styles.technology}>
