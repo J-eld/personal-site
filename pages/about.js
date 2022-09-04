@@ -12,7 +12,7 @@ export default function aboutme() {
         <h1 className={styles.aboutTitle}>About Me</h1>
         <p className={styles.aboutContent}>
           Hi, My name is Jad Eldik. I am a Full Stack Software Developer,
-          currently working as a Full Stack Developer at Renti. If you'd like to
+          currently working as a Full Stack Developer at <Link href="https://renti.co">Renti</Link>. If you'd like to
           see some of the projects I've been working on, check them out{" "}
           <Link href="/#projects">
             <span className={styles.link}>here.</span>
