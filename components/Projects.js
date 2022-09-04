@@ -140,7 +140,7 @@ export default function Projects() {
             </div>
             <div className={styles.projectCard}>
                 <div className={styles.projectCardTitle}>
-                    Url Shortener App
+                    Url Shortener App (No Longer Functioning) 
                 </div>
                 <div className={styles.photos}><ProjectImageCarousel folder="url-shortener-app-photos" numberOfPhotos={1} /></div>
                 <div className={styles.projectCardDescription}>
